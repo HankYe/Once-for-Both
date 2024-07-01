@@ -1,11 +1,11 @@
 #!/bin/bash
 echo "Start Searching"
 cd ../
-n_gpu=1
-gpu=0
+n_gpu=2
+gpu=0,1
 master_port=1235
 model_name=deit_small_patch16_224_mim
-data_path=/cpfs01/shared/ADLab/datasets/imagenet/
+data_path=/path/to/imagenet/
 output_dir=runs/exp
 target_flops=1.0
 batch_size=128
